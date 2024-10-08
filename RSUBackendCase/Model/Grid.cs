@@ -10,7 +10,7 @@
 			MaxX = maxX;
 			MaxY = maxY;
 		}
-
+		// x ve y pozisyon bilgilerinin maxX ve MaxY değerlerimizi aşması durumunda MaxX ve MaxY değerlerine indirgiyoruz ve negatif değerleri 0 a çekiyoruz.
 		public Position AreaControl(Position position)
 		{
 			position.X = Math.Min(position.X, MaxX);
